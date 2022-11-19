@@ -111,13 +111,12 @@ function build_llvm15
 	  -DCMAKE_BUILD_TYPE=$build_type \
 	  -DCMAKE_CXX_COMPILER=`which clang++` \
 	  -DCMAKE_C_COMPILER=`which clang ` \
-	  -DLLVM_ENABLE_PROJECTS="clang;lld" \
+	  -DLLVM_ENABLE_PROJECTS="clang" \
 	  -DLLVM_TARGETS_TO_BUILD=X86 \
 	  -DBUILD_SHARED_LIBS=ON \
 	  -DLLVM_USE_LINKER=lld \
 	  -DLLVM_USE_SPLIT_DWARF=ON \
 	  -DLLVM_OPTIMIZED_TABLEGEN=ON \
-	  -Wno-dev \
 	  $LLVM15_SRC/llvm
     pushd ./build > /dev/null
     ninja all
