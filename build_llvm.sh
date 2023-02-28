@@ -13,7 +13,7 @@ function download_llvm
 {
     if [[ ! -f $LLVM_SRC.tar.gz ]]; then
 	echo "starting downloading llvm..."
-	wget -O llvm-project-llvmorg-$LLVM_TAG.tar.gz $LLVM_DOWNLOAD_LINK
+	wget -O llvm-project-$LLVM_TAG.tar.gz $LLVM_DOWNLOAD_LINK
     fi
 }
 
