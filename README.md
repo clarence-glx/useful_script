@@ -1,6 +1,5 @@
 # build GCC/LLVM
-## use ct-ng to build gcc
-Getting the latest development version
-'git clone https://github.com/crosstool-ng/crosstool-ng'
+## build gcc
+'./gcc.sh -v 13 -t debug'
 
 ## build llvm
